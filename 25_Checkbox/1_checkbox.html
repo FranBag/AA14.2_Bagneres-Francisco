@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+<body>
+    <p>¿Qué deportes practicas?</p>
+    <label>
+        <input type="checkbox" name="deporte" value="Fútbol"> Fútbol
+    </label><br>
+    <label>
+        <input type="checkbox" name="deporte" value="Básket"> Básket
+    </label><br>
+    <label>
+        <input type="checkbox" name="deporte" value="Tenis"> Tenis</label>
+    <br>
+
+    <button onclick="mostrarDeportes()">Mostrar Selección</button>
+
+    <div id="resultado">
+        <p>Deportes elegidos: Ninguno.</p>
+    </div>
+
+    <script>
+        function mostrarDeportes() {
+            let checkboxes = document.getElementsByName('deporte');
+            let seleccion = [];
+
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    seleccion.push(checkboxes[i].value);
+                }
+            }
+
+            let mensaje;
+            if (seleccion.length > 0) {
+                mensaje = seleccion.join(', ');
+            } else {
+                mensaje = "Ninguno.";
+            }
+
+            document.getElementById('resultado').innerHTML = `<p>Deportes elegidos: <strong>${mensaje}</strong>.</p>`;
+        }
+    </script>
+</body>
+</html>

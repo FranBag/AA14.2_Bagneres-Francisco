@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios y Eventos</title>
+    </head>
+    <body>
+        <form>
+            <button type="button" onclick="mostrarMensaje(1)">1</button>
+            <button type="button" onclick="mostrarMensaje(2)">2</button>
+            <button type="button" onclick="mostrarMensaje(3)">3</button>
+        </form>
+
+        <div id="mensaje">
+            Presiona un botón para ver el mensaje.
+        </div>
+
+        <script type="text/javascript">
+            function mostrarMensaje(boton) {
+                let elementoMensaje = document.getElementById("mensaje");
+                elementoMensaje.textContent = "Se presionó el botón número: " + boton;
+            }
+        </script>
+
+    </body>
+</html>
