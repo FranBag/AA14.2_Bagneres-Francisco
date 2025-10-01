@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase String</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let nombreIngresado = "";
+        let contadorNombres = 0;
+
+        do {
+            nombreIngresado = prompt("Ingrese un nombre o Fin para terminar:");
+            if (nombreIngresado != "Fin") {
+                contadorNombres++;
+            }
+        } while (nombreIngresado !== "Fin");
+
+        document.write("Se ingresaron " + contadorNombres + " nombres.");
+
+    </script>
+</body>
+</html>

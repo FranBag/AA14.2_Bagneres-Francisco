@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Array</title>
+</head>
+<body>
+    <script text="text/javascript">
+    function procesarVector(vector) {
+        let acumuladoTotal = 0;
+        let acumuladoMayores36 = 0;
+        let cantidadMayores50 = 0;
+        for (let i = 0; i < vector.length; i++) {
+            let elemento = vector[i];
+            acumuladoTotal += elemento;
+
+            if (elemento > 36) {
+                acumuladoMayores36 += elemento;
+            }
+
+            if (elemento > 50) {
+                cantidadMayores50++;
+            }
+        }
+
+        console.log(`Vector ingresado: [${vector.join(', ')}]`);
+        console.log(`1. Valor acumulado total: ${acumuladoTotal}`);
+        console.log(`2. Valor acumulado de los mayores a 36: ${acumuladoMayores36}`);
+        console.log(`3. Cantidad de valores mayores a 50: ${cantidadMayores50}`);
+    }
+
+    procesarVector([10, 45, 20, 60, 30, 80, 5, 40]);
+    </script>
+</body>
+</html>
