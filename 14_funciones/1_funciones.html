@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function carga_de_enteros(){
+            primer_nro = prompt("Ingrese el número menor");
+            segundo_nro = prompt("Ingrese el número mayor");
+
+            let resultado = "";
+            for(i = primer_nro; i <= segundo_nro; i++) {
+                resultado = resultado + i + " "
+            }
+            console.log(resultado);
+        }
+
+        carga_de_enteros();
+
+    </script>
+</body>
+</html>

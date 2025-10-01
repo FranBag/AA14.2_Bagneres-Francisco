@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones con Parametros</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function mostrar_menor(primer_nro, segundo_nro, tercer_nro) {
+            let menor;
+            if (primer_nro < segundo_nro && primer_nro < tercer_nro) {
+                menor = primer_nro;
+            }
+            if (segundo_nro < primer_nro && segundo_nro < tercer_nro) {
+                menor = segundo_nro;
+            }
+            if (tercer_nro < segundo_nro && tercer_nro < primer_nro) {
+                menor = tercer_nro;
+            }
+            console.log(menor)
+        }
+
+        mostrar_menor(10,8,9);
+
+    </script>
+</body>
+</html>

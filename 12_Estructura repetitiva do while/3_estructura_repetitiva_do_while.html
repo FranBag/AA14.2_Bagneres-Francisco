@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Repetitiva Do While</title>
+</head>
+<body>
+    <script type="text/javascript">
+            let sumaTotal = 0;
+            let valorIngresado;
+
+            do {
+                valorIngresado = parseInt(prompt("Ingrese un valor para sumar (o 9999 para finalizar):"));
+                if (valorIngresado != 9999) {
+                    sumaTotal += valorIngresado;
+                }
+            } while (valorIngresado != 9999);
+
+            console.log("El valor acumulado final es: " + sumaTotal);
+
+            if (sumaTotal == 0) {
+                console.log("El valor acumulado es cero.");
+            } else if (sumaTotal > 0) {
+                console.log("El valor acumulado es mayor a cero.");
+            } else {
+                console.log("El valor acumulado es menor a cero.");
+            }
+    </script>
+</body>
+</html>
