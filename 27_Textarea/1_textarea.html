@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        
+        <label for="mail">Mail:</label>
+        <input type="text" id="mail">
+        
+        <label for="comentarios">Comentarios:</label>
+
+        <textarea id="comentarios"></textarea>
+        
+        <button onclick="enviarDatos()">Mostrar Datos</button>
+    </div>
+    <script>
+        function enviarDatos() {
+            const nombre = document.getElementById('nombre').value;
+            const mail = document.getElementById('mail').value;
+            const comentarios = document.getElementById('comentarios').value;
+
+            const mensaje = 
+                "Datos ingresados:\n" +
+                "Nombre: " + nombre + "\n" +
+                "Mail: " + mail + "\n" +
+                "Comentarios: " + comentarios;
+
+            alert(mensaje);
+        }
+    </script>
+</body>
+</html>
