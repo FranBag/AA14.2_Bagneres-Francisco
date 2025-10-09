@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Onmouseover y Onmouseout</title>
+</head>
+<body>
+ <h2>Acceso rápido a Webmail</h2>
+
+    <table>
+        <tr>
+        <td onmouseover="cambiarColor(this)" onmouseout="restaurarColor(this)">
+            <a href="https://mail.google.com" target="_blank">Gmail</a>
+        </td>
+        <td onmouseover="cambiarColor(this)" onmouseout="restaurarColor(this)">
+            <a href="https://outlook.live.com" target="_blank">Hotmail</a>
+        </td>
+        <td onmouseover="cambiarColor(this)" onmouseout="restaurarColor(this)">
+            <a href="https://mail.yahoo.com" target="_blank">Yahoo</a>
+        </td>
+        </tr>
+    </table>
+
+    <script>
+        function cambiarColor(celda) {
+            celda.style.backgroundColor = "lightblue";
+        }
+
+        function restaurarColor(celda) {
+            celda.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+</html>

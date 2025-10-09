@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Window</title>
+</head>
+<body>
+    <h2>Abrir una nueva ventana</h2>
+    <button onclick="abrirVentana()">Abrir ventana</button>
+
+    <script>
+        function abrirVentana() {
+            window.open(
+            "https://www.google.com",
+            "nuevaVentana",
+            "width=600,height=300"
+            );
+        }
+    </script>
+</body>
+</html>

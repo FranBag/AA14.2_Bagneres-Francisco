@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="verificarCookies()">
+    <h2>Verificar cookies del navegador</h2>
+
+    <script>
+        function verificarCookies() {
+            if (navigator.cookieEnabled) {
+                alert("Las cookies están habilitadas en este navegador.");
+                } else {
+                alert("Las cookies están deshabilitadas.");
+            }
+        }
+    </script>
+</body>
+</html>

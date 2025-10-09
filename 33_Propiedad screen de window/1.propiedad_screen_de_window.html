@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Screen de Window</title>
+</head>
+<body>
+    <h2>Ventana según el tamaño de la pantalla</h2>
+    <button onclick="abrirVentana()">Abrir ventana</button>
+
+    <script>
+        function abrirVentana() {
+            let ancho = screen.width;
+            let alto = screen.height / 2;
+
+            window.open(
+            "https://www.google.com",
+            "ventanaNueva",
+            "width=" + ancho + ",height=" + alto
+            );
+        }
+    </script>
+</body>
+</html>

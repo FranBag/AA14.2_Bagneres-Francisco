@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Onfocus y Onblur</title>
+</head>
+<body>
+    <h2>Ingreso de datos</h2>
+
+    <label>Nombre:</label>
+    <input type="text" id="nombre" onfocus="resaltar(this)" onblur="quitarResaltado(this)">
+
+    <label>Clave:</label>
+    <input type="password" id="clave" onblur="verificarClave(this)">
+
+    <script type="text/javascript">
+        function verificarClave(input) {
+            let clave = input.value;
+            if (clave.length < 7 || clave.length > 20) {
+                alert("La clave debe tener entre 7 y 20 caracteres");
+            }
+        }
+
+        function resaltar(input) {
+        input.style.backgroundColor = "lightyellow";
+        }
+
+        function quitarResaltado(input) {
+        input.style.backgroundColor = "white";
+        }
+    </script>
+
+</body>
+</html>

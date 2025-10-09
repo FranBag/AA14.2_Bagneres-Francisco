@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Location de Window</title>
+</head>
+<body>
+    <h2>Redirección aleatoria</h2>
+    <button onclick="abrirCorreo()">Ir a un webmail</button>
+
+    <script>
+        function abrirCorreo() {
+            let num;
+            num = Math.random() * 3;
+            num = parseInt(num);
+
+            if (num == 0) {
+                window.location = "https://outlook.live.com";
+            } else if (num == 1) {
+                window.location = "https://mail.google.com";
+            } else if (num == 2) {
+                window.location = "https://mail.yahoo.com";
+            }
+        }
+    </script>
+</body>
+</html>
